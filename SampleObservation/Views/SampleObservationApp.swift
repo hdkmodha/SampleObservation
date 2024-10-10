@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import FirebaseCore
+
+
+
+
 
 @main
 struct SampleObservationApp: App {
+    
+    init () {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookListView()
         }
     }
 }
